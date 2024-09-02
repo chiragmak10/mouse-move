@@ -26,12 +26,17 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <button
-        onClick={enableLock}
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-      >
-        {enableLockState ? "Enable Lock" : "Disable Lock"}
-      </button>
+      <video width="320" height="240" controls autoplay loop muted>
+        <source
+          src="https://videos.pexels.com/video-files/7949702/7949702-uhd_1440_2560_24fps.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://videos.pexels.com/video-files/7949702/7949702-uhd_1440_2560_24fps.mp4"
+          type="video/ogg"
+        />
+        Your browser does not support the video tag.
+      </video>
     </main>
   );
 }
