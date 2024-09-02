@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <video width="320" height="240" controls autoplay loop muted>
+      <video width="320" height="240" controls autoPlay loop muted>
         <source
           src="https://videos.pexels.com/video-files/7949702/7949702-uhd_1440_2560_24fps.mp4"
           type="video/mp4"
